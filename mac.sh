@@ -104,3 +104,13 @@ mkdir Themes
 mkdir Themes/iTerm
 curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors --output Themes/iTerm/Nord.itermcolors
 
+# Tweak system preferences.
+## Show status bar and path bar in Finder.
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowPathbar -bool true	
+## Avoid creating .DS_Store files on network volumes.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+## Favor local files over iCloud.
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+## Disable automatic capitalization as it’s annoying when typing code.
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
