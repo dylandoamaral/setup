@@ -69,7 +69,6 @@ brew install --cask visual-studio-code
 
 # Install usefull cli tools.
 brew install gh
-brew install autojump
 
 # Modify the default dock.
 brew install dockutil
@@ -96,7 +95,12 @@ dockutil --remove 'TV'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 exec zsh
+## Install Oh My Zsh plugins.
+brew install autojump
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ## Instal nord theme for iTerm2.
 mkdir Themes
 mkdir Themes/iTerm
 curl https://raw.githubusercontent.com/arcticicestudio/nord-iterm2/develop/src/xml/Nord.itermcolors --output Themes/iTerm/Nord.itermcolors
+
