@@ -61,6 +61,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install --cask gimp
 brew install --cask google-chrome
+brew install --cask inkscape
 brew install --cask intellij-idea-ce
 brew install --cask iterm2
 brew install --cask postman
