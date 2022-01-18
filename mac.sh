@@ -69,6 +69,7 @@ brew install --cask slack
 brew install --cask visual-studio-code
 
 # Install usefull cli tools.
+brew install act
 brew install gh
 
 # Modify the default dock.
