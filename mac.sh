@@ -38,6 +38,9 @@ brew upgrade
 # Install git.
 brew install git
 
+# Install binaries.
+brew install gnupg
+
 # Install bitwarden cli and login to it.
 brew install bitwarden-cli
 echo Log in to bitwarden:
