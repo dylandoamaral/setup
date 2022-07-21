@@ -40,6 +40,7 @@ brew install git
 
 # Install binaries.
 brew install gnupg
+brew install jq
 
 # Install bitwarden cli and login to it.
 brew install bitwarden-cli
